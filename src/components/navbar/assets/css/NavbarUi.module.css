@@ -1,1 +1,52 @@
 /* navbar css */
+.list{
+    width: 100%;
+}
+
+.list li>a {
+color: rgb(194, 42, 105) !important;
+text-transform: uppercase;
+font-size: 22px;
+font-family: serif;
+
+}
+
+.header{
+    position: fixed;
+   width: 1366px;
+    right: 0;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    box-shadow: 0px 0px 9px 3px rgba(192,169,169,0.75);
+-webkit-box-shadow: 0px 0px 9px 3px rgba(192,169,169,0.75);
+-moz-box-shadow: 0px 0px 9px 3px rgba(192,169,169,0.75);
+padding: 0;
+height: 90px;
+}
+
+
+
+.liststylelast{
+    flex-grow: 1;
+    display: flex;
+    width: 100%;
+    justify-content: right;
+}
+
+
+.cartCounter{
+    position: absolute;
+    top: 18px;
+    right: 123px;
+    font-size: 16px;
+      color:rgb(194, 42, 105);
+    border-radius: 50%;
+}
+
+.logo_style img{
+    width: 140px;
+    height: 70px;
+}
+
+/* ggjhsdabsjhdghfsdjh */
