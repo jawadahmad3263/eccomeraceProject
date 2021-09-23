@@ -9,6 +9,7 @@ import Login from './pages/login/container/Login';
 import AllProducts from './pages/allProducts/container/AllProducts'
 
 import Navbar from './components/navbar/container/Navbar';
+import FooterUi from './components/footer/Ui/FooterUi';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route  path="/Login" component={Login}/>
 
         </Switch>
+        <FooterUi/>
     </Router>
   );
 }
