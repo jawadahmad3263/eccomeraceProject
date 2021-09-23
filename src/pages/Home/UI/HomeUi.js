@@ -1,9 +1,30 @@
 import React from 'react'
+import { useSelector } from 'react-redux';
 
-export default function HomeUi() {
+
+export default function HomeUi(props) {
+    // const {allProducts} = props.allProducts;
+    
     return (
-        <div>
-            
+        <div className="container">
+        <div className="row gy-5">
+          {props.products?.map((product,index) => {
+            return (
+              <div className="col-md-4 col-lg-4" key={index}>
+              <div className="card cardsize">
+                <img src={product.image} className="card-img-top sizeofimage" alt="..." />
+                <div className="card-body">
+                 <div className="titlestyle"> <h5 className="card-title">{product.title}</h5> 
+                  <p className="card-text"> Price:<span className="text-danger">{product.price}$</span></p>
+                   {/* {/ <p className="card-text"> {product.description} </p> } */}
+                  <a href="#" className="btn btn-primary"> Add to Cart</a>
+                </div>
+                </div> 
+              </div>
+              </div>
+            );
+          })}
+        </div> 
         </div>
-    )
+      );
 }

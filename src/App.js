@@ -3,8 +3,10 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
+import Home from './pages/Home/container/Home';
+import Login from './pages/login/container/Login';
+import AllProducts from './pages/allProducts/container/AllProducts'
 
 import Navbar from './components/navbar/container/Navbar';
 
@@ -13,7 +15,10 @@ function App() {
       <Router>
         <Navbar/>
         <Switch>
-          {/* <Route exact path="/" component={Navbar}/> */}
+          <Route exact path="/" component={Home}/>
+          <Route  path="/Products" component={AllProducts}/>
+          <Route  path="/Login" component={Login}/>
+
         </Switch>
     </Router>
   );
