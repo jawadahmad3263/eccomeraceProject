@@ -1,4 +1,6 @@
 import React from 'react';
+import SliderHero from '../../../components/slider/sliderUi/SliderHero';
+
 import Styles from "../assets/css/HomeUi.module.css";
 
 export default function HomeUi(props) {
@@ -6,12 +8,14 @@ export default function HomeUi(props) {
     
     return (
         <div className={`container ${Styles.homepage}`}>
+        <div><SliderHero/></div>
           <h3>Wellcome TO Online Shopping</h3>
+          
         <div className="row gy-5">
           {props.products?.map((product,index) => {
             return (
               <div className="col-md-4 col-lg-4" key={index}>
-              <div className={`card  p-2 shadow ${Styles.cardStyel}`}>
+              <div className={`card  p-2 shadow ${Styles.cardStyle}`}>
                 <img src={product.image} className={`card-img-top ${Styles.sizeofimage}`} alt="..." />
                 <div className="card-body">
                   <div className={Styles.cardBodyStyle}>
