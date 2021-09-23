@@ -1,15 +1,41 @@
-export const initialState={
-    allProducts:[],
-    category:[],
-    loading:false,
-    error:null,
-    registerdUsers:[
-       {name:"hamid",email:"hamid@gmail.com",password:"1234"},
-       {name:"jawad",email:"jawad@gmail.com",password:"abcd"},
-       {name:"bunire",email:"buner@gmail.com",password:"1111"},
-       {name:"mehran",email:"mehran@gmail.com",password:"2222"},
-       {name:"sushi",email:"sushi@gmail.com",password:"3333"}
-    ],
-    cartData:[],
+export const initialState = {
+  allProducts: [],
+  category: [],
+  loading: false,
+  error: null,
+  total: 0,
 
+  registerdUsers: [
+    {
+      name: "hamid",
+      email: "hamid@gmail.com",
+      password: "1234",
+      loginStatus: false,
+    },
+    {
+      name: "jawad",
+      email: "jawad@gmail.com",
+      password: "abcd",
+      loginStatus: false,
+    },
+    {
+      name: "bunire",
+      email: "buner@gmail.com",
+      password: "1111",
+      loginStatus: false,
+    },
+    {
+      name: "mehran",
+      email: "mehran@gmail.com",
+      password: "2222",
+      loginStatus: false,
+    },
+    {
+      name: "sushi",
+      email: "sushi@gmail.com",
+      password: "3333",
+      loginStatus: false,
+    },
+  ],
+  cartData: [],
 };
