@@ -1,4 +1,3 @@
-
 import { initialState } from "../store/initialState";
 const allProductsReducer = (state = initialState, action) => {
   switch (action.type) {
@@ -7,23 +6,21 @@ const allProductsReducer = (state = initialState, action) => {
         ...state,
         loading: true,
         error: null,
-      }
+      };
     case "FETCH_PRODUCTS_SUCCESS":
       return {
         ...state,
         loading: false,
         allProducts: action.payload,
-      }
+      };
     case "FETCH_PRODUCTS_FAILURE":
       return {
         ...state,
         loading: false,
         error: action.err,
-      }
+      };
     default:
-        return state
-    }
-  
+      return state;
+  }
 };
 export default allProductsReducer;
-

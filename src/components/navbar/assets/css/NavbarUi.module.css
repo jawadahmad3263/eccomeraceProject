@@ -13,7 +13,11 @@ font-family: serif;
 
 .header{
     position: fixed;
+<<<<<<< HEAD
    width:100%;
+=======
+   width: 100%;
+>>>>>>> 4f31dd09d388b7899b26ce9d5edba3cc3340c8d9
     right: 0;
     top: 0;
     left: 0;
@@ -38,7 +42,11 @@ height: 90px;
 .cartCounter{
     position: absolute;
     top: 18px;
+<<<<<<< HEAD
     right: 115px;
+=======
+    right: 142px;
+>>>>>>> 4f31dd09d388b7899b26ce9d5edba3cc3340c8d9
     font-size: 16px;
       color:rgb(194, 42, 105);
     border-radius: 50%;

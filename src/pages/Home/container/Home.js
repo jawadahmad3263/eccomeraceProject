@@ -1,7 +1,7 @@
 import React,{useEffect} from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import HomeUi from '../UI/HomeUi'
-import fetchAllProducts from '../../../redux/actions/fetchAllProducts';
+import HomeUi from '../UI/HomeUi';
+import fetchCategories from '../../../redux/actions/fetchCategories';
 
 
 
@@ -11,12 +11,12 @@ export default function Home() {
    
 
     useEffect(()=>{
-         dispatch(fetchAllProducts());
+         dispatch(fetchCategories());
          
     })
 
-    const Products= useSelector((state)=>state.allProductsReducer.allProducts);
-    console.log('prod',Products);
+    const Products= useSelector((state)=>state.categoriesReducer.category);
+    
  
     return (
      
