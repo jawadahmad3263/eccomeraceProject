@@ -30,36 +30,22 @@ export default function Login() {
   const handleLogin = (event) => {
     event.preventDefault();
     console.log("credintial", credintial);
-    const userCheck = registerdUsers.find((user)=>(user.email===credintial.email&&user.password===credintial.password));
+    const user = registerdUsers.find((user)=>(user.email===credintial.email&&user.password===credintial.password));
     const passCheck = registerdUsers.find((user)=>(user.email===credintial.email&&user.password!==credintial.password));
     const emailCheck = registerdUsers.find((user)=>user.email!==credintial.email);
-    if(userCheck===true){
+    console.log("kiki",user)
+    if(user){
       dispatch(action.loginUser(credintial));
     }
-    if(emailCheck===true)
-    {
-      setEmailLabel("incorrect email")
-    }
-    if(passCheck===true)
+    else if(passCheck)
     {
       setPasswordLabel("incorrect password")
     }
+    else{
+      setEmailLabel("incorrect email")
+      setPasswordLabel("incorrect password")
+    }
 
-
-    // for (var i = 0; i < registerdUsers.length; i++) {
-    //   if (registerdUsers[i].email === credintial.email) 
-    //   {
-    //     if(registerdUsers[i].password === credintial.password){
-    //    return dispatch(action.loginUser(credintial));
-    //     break;}
-    //     else{
-    //      return setPasswordLabel("incorrect password");
-    //     }
-    //   } 
-    //   if(registerdUsers[i].email!== credintial.email)
-    //       setEmailLabel("incorrect Email")
- 
-    // }
   };
 
   return (
