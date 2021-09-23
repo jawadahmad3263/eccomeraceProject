@@ -8,7 +8,7 @@ export default function LoginUi(props) {
       <div className="col-md-6 col-lg-6">
         <form className="py-5">
           <div className="mb-3">
-            <label for="email" className={`form-label ${Styles.labelColor}`}>
+            <label for="email" className="form-label">
               {emailLabel}
             </label>
             <input
