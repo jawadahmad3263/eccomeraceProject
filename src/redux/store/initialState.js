@@ -3,6 +3,8 @@ export const initialState={
     category:[],
     loading:false,
     error:null,
+    total:0,
+    loginStatus:false,
     registerdUsers:[
        {name:"hamid",email:"hamid@gmail.com",password:"1234"},
        {name:"jawad",email:"jawad@gmail.com",password:"abcd"},
