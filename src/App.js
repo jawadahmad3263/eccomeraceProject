@@ -1,4 +1,6 @@
 import './App.css';
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 import {
   BrowserRouter as Router,
   Switch,
@@ -10,6 +12,7 @@ import AllProducts from './pages/allProducts/container/AllProducts'
 
 import Navbar from './components/navbar/container/Navbar';
 import FooterUi from './components/footer/Ui/FooterUi';
+
 
 function App() {
   return (

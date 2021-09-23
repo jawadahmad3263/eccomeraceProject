@@ -5,6 +5,7 @@ import fetchAllProducts from '../../../redux/actions/fetchAllProducts';
 
 
 
+
 export default function Home() {
     const dispatch=useDispatch();
    
@@ -18,6 +19,8 @@ export default function Home() {
     console.log('prod',Products);
  
     return (
+     
         <HomeUi products={Products}/>
+     
     )
 }
