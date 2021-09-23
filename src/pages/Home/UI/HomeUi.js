@@ -1,12 +1,12 @@
-import React from 'react'
-import { useSelector } from 'react-redux';
-
+import React from 'react';
+import Styles from "../assets/css/HomeUi.module.css";
 
 export default function HomeUi(props) {
     // const {allProducts} = props.allProducts;
     
     return (
-        <div className="container">
+        <div className={`container ${Styles.homepage}`}>
+          <h3>Wellcome TO Online Shopping</h3>
         <div className="row gy-5">
           {props.products?.map((product,index) => {
             return (
