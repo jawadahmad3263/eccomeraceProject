@@ -1,6 +1,9 @@
 export const initialState = {
   allProducts: [],
-  category: [],
+  jewelary: [],
+  menClothes:[],
+  womenClothes:[],
+  electronics:[],
   loading: false,
   error: null,
   total: 0,
