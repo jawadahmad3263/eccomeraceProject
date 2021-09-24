@@ -2,13 +2,13 @@ import React from "react";
 
 export default function FooterUi() {
   return (
-    <footer className="text-center text-lg-start bg-light text-muted">
+    <footer className="text-center text-lg-start bg-light text-muted" style={{color:"rgb(194, 42, 105)"}}>
       <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
         <div className="me-5 d-none d-lg-block">
           <span>Get connected with us on social networks:</span>
         </div>
 
-        <div>
+        <div style={{color:"rgb(194, 42, 105)"}}>
           <a href="" className="me-4 text-reset">
             <i className="fab fa-facebook-f"></i>
           </a>
