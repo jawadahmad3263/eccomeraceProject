@@ -1,9 +1,9 @@
 import React from 'react'
+import CardUi from '../UI/CardUi'
 
-export default function Card() {
+export default function Card(props) {
+    const {product,index} = props;
     return (
-        <div>
-            
-        </div>
+        <CardUi product={product} index={index} />
     )
 }
