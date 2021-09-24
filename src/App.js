@@ -12,7 +12,7 @@ import AllProducts from './pages/allProducts/container/AllProducts'
 
 import Navbar from './components/navbar/container/Navbar';
 import FooterUi from './components/footer/Ui/FooterUi';
-import Card from './components/card/container/Card';
+import Cart from './pages/cart/Cart';
 
 
 function App() {
@@ -23,6 +23,7 @@ function App() {
           <Route exact path="/" component={Home}/>
           <Route  path="/Products" component={AllProducts}/>
           <Route  path="/Login" component={Login}/>
+          <Route path="/shopping-cart" component={Cart}/>
       
         </Switch>
         <FooterUi/>

@@ -56,9 +56,9 @@ export default function NavbarUi() {
               </Link>
             </li>
             <li className={`nav-item ${Styles.liststyle}`}>
-              <Link className={`nav-link ${Styles.linkstyle} `}>
+              <Link to="/shopping-cart" className={`nav-link ${Styles.linkstyle} `}>
                 <i className={`fas fa-cart-plus ${Styles.cart} `}>
-                  {" "}
+             
                   <span className={Styles.cartCounter}>12</span>
                 </i>
               </Link>
