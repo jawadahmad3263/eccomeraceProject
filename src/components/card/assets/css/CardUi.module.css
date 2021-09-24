@@ -1,1 +1,11 @@
 /* card css */
+.cardBodyStyle{
+    height: 180px;
+}
+.cardStyle{
+    border-radius: 15px;
+}
+.sizeofimage{
+  
+    height: 300px;
+}

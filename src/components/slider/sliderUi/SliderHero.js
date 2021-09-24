@@ -31,7 +31,7 @@ function SliderHero() {
             arr.map((item)=>{
               return(
                 <div style={{height:500,position:"relative"}}>
-                  <img src={item} alt="tshirts" style={{width:1100,height:500}}/>
+                  <img src={item} alt="tshirts" style={{width:1300,height:500}}/>
                  
                 </div>
               )
