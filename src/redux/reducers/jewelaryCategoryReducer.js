@@ -1,27 +1,27 @@
 import { initialState } from "../store/initialState";
-const categoriesReducer = (state = initialState, action) => {
+const jewelaryCategoryReducer = (state = initialState, action) => {
   switch (action.type) {
-    case "FETCH_CATEGORY_REQ":
+    case "FETCH_JEWELARY_CATEGORY_REQ":
       return {
         ...state,
         loading: true,
         error: null,
       };
-    case "FETCH_CATEGORY_SUCCESS":
+    case "FETCH_JEWELARY_CATEGORY_SUCCESS":
       return {
         ...state,
         loading: false,
-        category: action.payload,
+        jewelary: action.payload,
       };
-    case "FETCH_CATEGORY_FAILURE":
+    case "FETCH_JEWELARY_CATEGORY_FAILURE":
       return {
         ...state,
         loading: false,
-        category: action.err,
+        jewelary: action.err,
       };
     default:
       return state;
   }
 };
 
-export default categoriesReducer;
+export default jewelaryCategoryReducer;
