@@ -1,8 +1,11 @@
 import React,{useEffect} from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import HomeUi from '../UI/HomeUi';
-import fetchCategories from '../../../redux/actions/fetchCategories';
+import fetchJewelaryCategory from '../../../redux/actions/fetchJewelaryCategory';
+import fetchMenCategory from '../../../redux/actions/fetchMenCategory';
+import fetchWomenCategories from '../../../redux/actions/fetchWomenCategory';
 
+import fetchElectronicCategory from "../../../redux/actions/fetchElectronicCategory";
 
 
 
@@ -11,16 +14,22 @@ export default function Home() {
    
 
     useEffect(()=>{
-         dispatch(fetchCategories());
+         dispatch(fetchJewelaryCategory());
+         dispatch(fetchMenCategory());
+         dispatch(fetchWomenCategories());
+         dispatch(fetchElectronicCategory());
          
     },[])
 
-    const Products= useSelector((state)=>state.categoriesReducer.category);
+    const jewelary= useSelector((state)=>state.jewelaryCategoryReducer.jewelary);
+    const menCloths= useSelector((state)=>state.menCategoriesReducer.menClothes);
+    const womenCloths= useSelector((state)=>state.womenCategoriesReducer.womenClothes);
+    const electronics= useSelector((state)=>state.electronicCategoriesReducer. electronics);
     
  
     return (
      
-        <HomeUi products={Products}/>
+        <HomeUi jewelary={jewelary} menCloths={menCloths} womenCloths={womenCloths} electronics={electronics}/>
      
     )
 }
