@@ -11,8 +11,8 @@ export default function HomeUi(props) {
         <div className={`container ${Styles.homepage}`}>
         <div><SliderHero/></div>
         <div className="py-5">
-          <h3>Wellcome TO Online Shopping</h3>
-          <Link className="btn btn-primary">Jewallary</Link>
+          <h3 className="text-center">Wellcome TO Online Shopping</h3>
+        <Link className="btn btn-primary ">Jewallary</Link>
         <div className="row gy-5">
           {props.products?.filter((product,index)=>index<3).map((product,index) => {
             return (
