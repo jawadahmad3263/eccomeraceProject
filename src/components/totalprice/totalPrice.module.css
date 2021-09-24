@@ -1,0 +1,40 @@
+.mainPriceWrapper{
+    width: 300px;
+    margin-top: 165px;
+    border:1px solid lightgray;
+    display:flex;
+    justify-content: start;
+    padding: 20px;
+    flex-direction: column;
+
+}
+.priceContent{
+   padding: 0px;
+
+}
+
+.totalPriceStyle{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    border-bottom: 0.5px solid lightgray;
+    margin-top: 30px;
+   
+}
+
+.totalamount{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 15px;
+}
+
+.checkoutPageButton{
+ 
+ margin-top: 30px;
+ margin-left: auto;
+ margin-right: auto;
+}
+.btnStyle{
+    display: inline-block;
+}

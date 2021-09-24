@@ -13,30 +13,42 @@ import shopping from "../assets/shopping.jpg";
 
 function SliderHero() {
   
-  let arr=[tshirts, electronics, jawellary,shopping];
+  let arr=[tshirts,electronics,jawellary,shopping];
   const settings = {
     dots: true,
     infinite: true,
     speed: 1000,
     slidesToShow: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 2000,
     slidesToScroll: 1
   };
+
+  const sliderContent=(item,index)=>{
+    return(
+        <div className={Styles.sliderMain} key={index}>
+          <div className={Styles.imagewarapper}>
+          <img src={item} alt="tshirts" className={Styles.imgStyle}/>
+          <h1 className={Styles.slidContent}>
+            Sale Upto 50%
+          </h1>
+            
+          </div>
+        
+         
+        </div>
+      )
+   
+  }
   return (
     <div className="container">
-     <h2 className="text-center" style={{color:"rgb(194, 42, 105)",padding:40,fontFamily:"serif",fontStyle:"italic" }}> Wellcome For Shopping</h2>
+     <h2 className="text-center" style={{color:"rgb(194, 42, 105)",padding:40,fontFamily:"serif",fontSize:40,fontStyle:"italic" }}> Wellcome For Shopping</h2>
         <Slider {...settings}>
-          {
-            arr.map((item)=>{
-              return(
-                <div style={{height:500,position:"relative"}}>
-                  <img src={item} alt="tshirts" style={{width:1100,height:500}}/>
-                 
-                </div>
-              )
-            })
-          }
+            {
+              arr.map((item,index)=>{
+               return sliderContent(item, index);
+              })
+            }
           </Slider>
     </div>
   )
