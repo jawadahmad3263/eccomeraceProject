@@ -19,7 +19,7 @@ function SliderHero() {
     infinite: true,
     speed: 1000,
     slidesToShow: 1,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 2000,
     slidesToScroll: 1
   };
