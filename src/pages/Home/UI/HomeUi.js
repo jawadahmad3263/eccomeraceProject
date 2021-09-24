@@ -9,6 +9,7 @@ export default function HomeUi(props) {
     return (
         <div className={`container ${Styles.homepage}`}>
         <div><SliderHero/></div>
+        <div className="py-5 text-center">
           <h3>Wellcome TO Online Shopping</h3>
           <Link className="btn btn-primary">Jewallary</Link>
         <div className="row gy-5">
@@ -30,6 +31,7 @@ export default function HomeUi(props) {
             );
           })}
         </div> 
+        </div>
         </div>
       );
 }

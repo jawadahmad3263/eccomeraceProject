@@ -13,7 +13,7 @@ export default function Home() {
     useEffect(()=>{
          dispatch(fetchCategories());
          
-    })
+    },[])
 
     const Products= useSelector((state)=>state.categoriesReducer.category);
     
