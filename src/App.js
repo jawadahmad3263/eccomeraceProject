@@ -14,6 +14,7 @@ import Navbar from './components/navbar/container/Navbar';
 import FooterUi from './components/footer/Ui/FooterUi';
 import Cart from './pages/cart/Cart';
 import Shipping from './components/shipping/Shipping';
+import Category from './components/category/container/Category';
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
           <Route  path="/Login" component={Login}/>
           <Route path="/shopping-cart" component={Cart}/>
            <Route path="/checkout" component={Shipping}/>
+           <Route path="/category/:categoryType" component={Category}/>
         </Switch>
         <FooterUi/>
     </Router>
