@@ -10,8 +10,6 @@ const fetchAllProducts = () => async (dispatch)=>{
         dispatch({type:"FETCH_PRODUCTS_FAILURE",err})
 
     }
-   
-
 }
 
 export default fetchAllProducts;
