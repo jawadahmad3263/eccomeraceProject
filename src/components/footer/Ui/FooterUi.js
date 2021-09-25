@@ -1,5 +1,5 @@
 import React from "react";
-
+import Styles from "../assets/css/FooterUi.module.css";
 export default function FooterUi() {
   return (
     <footer className="text-center text-lg-start bg-light text-muted" style={{color:"rgb(194, 42, 105)", marginTop:50}}>
@@ -8,7 +8,7 @@ export default function FooterUi() {
           <span>Get connected with us on social networks:</span>
         </div>
 
-        <div style={{color:"rgb(194, 42, 105)"}}>
+        <div className={Styles.footerStyle} style={{color:"rgb(194, 42, 105)"}} >
           <a href="" className="me-4 text-reset">
             <i className="fab fa-facebook-f"></i>
           </a>
@@ -69,7 +69,8 @@ export default function FooterUi() {
             </div>
 
             <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-              <h6 className="text-uppercase fw-bold mb-4">Useful links</h6>
+              <h6 className={`text-uppercase fw-bold mb-4 ${Styles.footerStyle}`}>Useful links</h6>
+            
               <p>
                 <a href="#!" className="text-reset">
                   Pricing

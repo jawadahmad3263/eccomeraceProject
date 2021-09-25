@@ -5,7 +5,16 @@
 .cardStyle{
     border-radius: 15px;
 }
+.cardStyle img{
+    width: 300px;
+    height: 300px;
+    align-self: center;
+}
 .sizeofimage{
   
-    height: 300px;
+    height: 250px;
+    width: 300;
+}
+.col-lg-3.col-md-3 .card{
+height: 450px;
 }
