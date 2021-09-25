@@ -9,19 +9,19 @@ function Shipping() {
           <div className={Styles.formWrapper}>
               <form className={Styles.formStyle}>
                  <div className={Styles.formContent}>
-                     <label>Full Name</label>
+                     <label> <i class="fa fa-user"></i>Full Name</label>
                      <input type="text" placeholder="Enter full Name"  className={Styles.InputStyle} />
                  </div>
                  <div className={Styles.formContent}>
-                     <label>Email</label>
+                     <label> <i class="fa fa-envelope"></i>Email</label>
                      <input type="email" placeholder="Your Email"  />
                  </div>
                  <div className={Styles.formContent}>
-                     <label>Address</label>
+                     <label><i class="fa fa-address-card-o"></i>Address</label>
                      <input type="text" placeholder="Complete Address"  />
                  </div>
                  <div className={Styles.formContent}>
-                     <label>City</label>
+                     <label> <i class="fa fa-institution"></i>City</label>
                      <input type="text" placeholder="Enter full Name"  />
                  </div>
                  <div className={Styles.formContent}>

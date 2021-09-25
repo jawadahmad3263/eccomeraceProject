@@ -43,6 +43,10 @@
      font-size: 18px;
      font-weight: 500;
      padding: 10px 0px;
+     
+ }
+ .formContent label i{
+     padding-right: 10px;
  }
  .paymentWrapper{
      margin-top: -30px;

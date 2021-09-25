@@ -23,7 +23,7 @@ function TotalPrice() {
        <p>$310</p>
       </div>
       <div className={Styles.checkoutPageButton}>
-          <Link  to="/checkout" className={`btn btn-outline-primary ${Styles.btnStyle} `}>Chectout Page</Link>
+          <Link  to="/checkout" className={`btn btn-outline-primary text-uppercase ${Styles.btnStyle} `}>Checkout Page</Link>
       </div>
      
     </div>

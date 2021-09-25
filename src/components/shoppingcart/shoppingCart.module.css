@@ -1,73 +1,109 @@
-.cart_container{
-   
-width: 770px;
-border-bottom: 0.5px solid lightgray;
-border-left: 0.5px solid lightgray;
-border-right: 0.5px solid lightgray;
-
+.cart_container {
+  width: 770px;
+  border-bottom: 0.5px solid lightgray;
+  border-left: 0.5px solid lightgray;
+  border-right: 0.5px solid lightgray;
 }
-.items{
-    margin-top: 100px;
-   margin-left: 220px;
-    padding: 15px 0px;
+.items {
+  margin-top: 100px;
+  margin-left: 220px;
+  padding: 15px 0px;
 }
-.cartContentStyle{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.cartContentStyle {
+  display: flex;
+  flex-direction: column;
+  
+  padding: 0px 30px;
+  justify-content: space-between;
 }
-.cartimageStyle{
-    padding: 10px;
+.price{
+    margin-top: 10px;
 }
-
-
-.imageSize{
-    width: 140px;
-    height: 90px;
-   
+.cartimageStyle {
+  padding: 10px;
 }
 
-.cartQuantity{
-    font-size: 20px;
-    font-weight: 800;
-    padding: 8px;
-    margin-top: 13px;
+.imageSize {
+  width: 140px;
+  height: 90px;
+}
+
+.cartQuantity {
+  font-size: 20px;
+  font-weight: 800;
+  padding: 8px;
+  margin-top: 13px;
+}
+
+.actionsStyle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.cartName {
+  max-width: 70%;
+}
+
+.number {
+  font-size: 20px;
+  font-weight: 800;
+  padding: 10px;
+}
+
+.singleCart {
+  display: flex;
+  padding: 40px 60px;
+  align-items: center;
+  justify-content: space-around;
+  border-top: 1px solid lightgray;
+  padding: 5px;
+}
+
+.btnDanger {
+  outline-color: 1px solid rgb(233, 66, 66);
+  padding: 0px 10px;
+
+  font-size: 20px;
 }
 
 .actionsStyle{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    margin-top: -15px;
 
 }
-
-.cartName{
-    max-width: 70%;
+.action{
+    margin-top: -13px;
+}
+.removeStyle button {
+  border: none;
+  /* background-color: lightgray; */
+  color: red;
+  padding: 6px 12px;
+}
+.removeStyle button:hover {
+  background-color: rgb(153, 152, 152);
+}
+.removeStyle button:focus {
+  outline: none;
+  visibility: none;
+}
+.removeStyle button:visited {
+  outline: none;
 }
 
-.number{
-    font-size: 20px;
-    font-weight: 800;
-    padding: 10px;
+.actionsStyle button {
+  border: none;
+  /* background-color: lightgray; */
+
+  padding: 7px 13px;
 }
-
-.singleCart{
-  
-    display: flex;
-    padding: 40px 60px;
-    align-items: center;
-    justify-content: space-around;
- border-top: 1px solid lightgray;
-    padding: 5px;
-   
-
+.actionsStyle button:hover {
+  background-color:rgb(155, 152, 152);
 }
-
-.btnDanger{
-    outline-color: 1px solid rgb(233, 66, 66);
-    padding: 0px 10px;
-
-    font-size: 20px;
-    
-
+.actionsStyle button:focus {
+  outline: none;
+  visibility: none;
+}
+.actionsStyle button:visited {
+  outline: none;
 }
