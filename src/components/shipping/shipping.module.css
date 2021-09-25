@@ -1,0 +1,63 @@
+
+  .mainWrapper{
+      margin-top: 110px;
+  }
+
+  
+ .formWrapper{
+     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+ }
+ .formContent{
+     display: flex;
+     flex-direction: column;
+     width: 530px;
+  margin-top: 20px;
+ }
+ .formContent a{
+     text-decoration: none;
+     font-style: none;
+     color: black;
+ }
+ .linkStyle{
+     background-color: lightgray;
+     padding: 8px;
+     text-align: center;
+
+ }
+
+ .formContent input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 0.5px solid lightgray;
+    width: 400px;
+ }
+ .formContent input:focus{
+     visibility: none;
+     outline: none;
+ }
+
+ .formContent label{
+     font-size: 18px;
+     font-weight: 500;
+     padding: 10px 0px;
+     
+ }
+ .formContent label i{
+     padding-right: 10px;
+ }
+ .paymentWrapper{
+     margin-top: -30px;
+     width: 530px;
+ }
+ 
+
+
+ .InputStyle{
+     border-top: none;
+     border-left: none;
+     border-right: none;
+ }
+  
