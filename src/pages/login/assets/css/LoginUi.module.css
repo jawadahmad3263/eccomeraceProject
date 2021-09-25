@@ -15,7 +15,7 @@
     border: 1px solid gray;
      background-color: rgba(124, 102, 124, 0.781);
      opacity: 0.9;
-     border-radius: 10px;
+     /* border-radius: 10px; */
      width: 480px;
      margin-left: auto;
      margin-right: auto;
