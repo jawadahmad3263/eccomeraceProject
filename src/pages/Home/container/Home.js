@@ -11,7 +11,6 @@ import fetchCategory from '../../../redux/actions/fetchCategory';
 
 export default function Home() {
     const dispatch=useDispatch();
-   
 
     useEffect(()=>{
          dispatch(fetchCategory("jewelery"));

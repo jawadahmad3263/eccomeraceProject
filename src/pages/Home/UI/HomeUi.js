@@ -12,42 +12,54 @@ export default function HomeUi(props) {
         {/* <h3 className="text-center">Wellcome TO Online Shopping</h3> */}
         <div className="py-5">
           
-      
+            <h1 className={`text-center py-2 ${Styles.headings} ` }>Jewellary </h1>
         <div className={`row gy-5 ${Styles.sectionWrapper}`}>
+
           {props.jewelary?.filter((jewelary,index)=>index<3).map((jewelary,index) => {
             return (
              <Card product={jewelary} index={index}/>
             );
           })}
             <div className={Styles.linkWrapper}>
-              <span>Wana see more jewelery products</span>
+              <span>click to See more jewelery products</span>
               <Link className={Styles.link} to={`/category/${"jewelary"}`}>Click Here</Link>
               </div>
         </div> 
 
-        <Link className="btn btn-primary" to={`/category/${"menCloths"}`}>Men's Cloths</Link>
+        <h1 className={`text-center py-2 ${Styles.headings} ` }>Men's Clothes </h1>
         <div className="row gy-5">
           {props.menCloths?.filter((menCloths,index)=>index<3).map((menCloths,index) => {
             return (
              <Card product={menCloths} index={index}/>
             );
           })}
+          <div className={`conatiner ${Styles.linkWrapper}`}>
+              <span>Click to See   Men's Clothes  </span>
+              <Link className={Styles.link} to={`/category/${"menCloths"}`}>Click Here</Link>
+              </div>
         </div> 
-        <Link className="btn btn-primary" to={`/category/${"womenCloths"}`}>Women's Cloths</Link>
+        <h1 className={`text-center py-2 ${Styles.headings} ` }>WomenCothes </h1>
         <div className="row gy-5">
           {props.womenCloths?.filter((womenCloths,index)=>index<3).map((womenCloths,index) => {
             return (
              <Card product={womenCloths} index={index}/>
             );
           })}
+          <div className={`conatiner ${Styles.linkWrapper}`}>
+              <span>Click to see  more WomenClothes</span>
+              <Link className={Styles.link} to={`/category/${"womenCloths"}`} >Click Here</Link>
+              </div>
         </div> 
-        <Link className="btn btn-primary" to={`/category/${"electronics"}`}>Electronics</Link>
         <div className="row gy-5">
           {props.electronics?.filter((electronics,index)=>index<3).map((electronics,index) => {
             return (
              <Card product={electronics} index={index}/>
             );
           })}
+          <div className={`conatiner ${Styles.linkWrapper}`}>
+              <span>Click To see Electronic products </span>
+              <Link className={Styles.link} to={`/category/${"electronics"}`}>Click Here</Link>
+              </div>
         </div> 
         </div>
         </div>
