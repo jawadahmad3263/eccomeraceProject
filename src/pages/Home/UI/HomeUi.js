@@ -21,11 +21,11 @@ export default function HomeUi(props) {
           })}
             <div className={Styles.linkWrapper}>
               <span>Wana see more jewelery products</span>
-              <Link className={Styles.link}>Click Here</Link>
+              <Link className={Styles.link} to={`/category/${"jewelary"}`}>Click Here</Link>
               </div>
         </div> 
 
-        <Link className="btn btn-primary">Men's Cloths</Link>
+        <Link className="btn btn-primary" to={`/category/${"menCloths"}`}>Men's Cloths</Link>
         <div className="row gy-5">
           {props.menCloths?.filter((menCloths,index)=>index<3).map((menCloths,index) => {
             return (
@@ -33,7 +33,7 @@ export default function HomeUi(props) {
             );
           })}
         </div> 
-        <Link className="btn btn-primary">Women's Cloths</Link>
+        <Link className="btn btn-primary" to={`/category/${"womenCloths"}`}>Women's Cloths</Link>
         <div className="row gy-5">
           {props.womenCloths?.filter((womenCloths,index)=>index<3).map((womenCloths,index) => {
             return (
@@ -41,7 +41,7 @@ export default function HomeUi(props) {
             );
           })}
         </div> 
-        <Link className="btn btn-primary">Electronics</Link>
+        <Link className="btn btn-primary" to={`/category/${"electronics"}`}>Electronics</Link>
         <div className="row gy-5">
           {props.electronics?.filter((electronics,index)=>index<3).map((electronics,index) => {
             return (
