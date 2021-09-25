@@ -20,11 +20,12 @@ export default function HomeUi(props) {
              <Card product={jewelary} index={index}/>
             );
           })}
-            <div className={`conatiner ${Styles.linkWrapper}`}>
-              <span>Cick to see more jewelery products</span>
-              <Link className={Styles.link}>Click Here</Link>
+            <div className={Styles.linkWrapper}>
+              <span>click to See more jewelery products</span>
+              <Link className={Styles.link} to={`/category/${"jewelary"}`}>Click Here</Link>
               </div>
         </div> 
+
         <h1 className={`text-center py-2 ${Styles.headings} ` }>Men's Clothes </h1>
         <div className="row gy-5">
           {props.menCloths?.filter((menCloths,index)=>index<3).map((menCloths,index) => {
@@ -33,8 +34,8 @@ export default function HomeUi(props) {
             );
           })}
           <div className={`conatiner ${Styles.linkWrapper}`}>
-              <span>Click to See Some more Men's Clothes click </span>
-              <Link className={Styles.link}>Click Here</Link>
+              <span>Click to See   Men's Clothes  </span>
+              <Link className={Styles.link} to={`/category/${"menCloths"}`}>Click Here</Link>
               </div>
         </div> 
         <h1 className={`text-center py-2 ${Styles.headings} ` }>WomenCothes </h1>
@@ -46,10 +47,9 @@ export default function HomeUi(props) {
           })}
           <div className={`conatiner ${Styles.linkWrapper}`}>
               <span>Click to see  more WomenClothes</span>
-              <Link className={Styles.link}>Click Here</Link>
+              <Link className={Styles.link} to={`/category/${"womenCloths"}`} >Click Here</Link>
               </div>
         </div> 
-        <h1 className={`text-center py-2 ${Styles.headings} ` }>Electronics </h1>
         <div className="row gy-5">
           {props.electronics?.filter((electronics,index)=>index<3).map((electronics,index) => {
             return (
@@ -58,7 +58,7 @@ export default function HomeUi(props) {
           })}
           <div className={`conatiner ${Styles.linkWrapper}`}>
               <span>Click To see Electronic products </span>
-              <Link className={Styles.link}>Click Here</Link>
+              <Link className={Styles.link} to={`/category/${"electronics"}`}>Click Here</Link>
               </div>
         </div> 
         </div>
