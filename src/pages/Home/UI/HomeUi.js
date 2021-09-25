@@ -9,16 +9,22 @@ export default function HomeUi(props) {
     return (
         <div className={`container ${Styles.homepage}`}>
         <div><SliderHero/></div>
+        {/* <h3 className="text-center">Wellcome TO Online Shopping</h3> */}
         <div className="py-5">
-          <h3 className="text-center">Wellcome TO Online Shopping</h3>
-        <Link className="btn btn-primary ">Jewallary</Link>
-        <div className="row gy-5">
+          
+      
+        <div className={`row gy-5 ${Styles.sectionWrapper}`}>
           {props.jewelary?.filter((jewelary,index)=>index<3).map((jewelary,index) => {
             return (
              <Card product={jewelary} index={index}/>
             );
           })}
+            <div className={Styles.linkWrapper}>
+              <span>Wana see more jewelery products</span>
+              <Link className={Styles.link}>Click Here</Link>
+              </div>
         </div> 
+
         <Link className="btn btn-primary">Men's Cloths</Link>
         <div className="row gy-5">
           {props.menCloths?.filter((menCloths,index)=>index<3).map((menCloths,index) => {
