@@ -3,7 +3,7 @@
 .formContainer{
  margin-top: 90px;
  padding: 80px 0px;
- background: url("../images/loginBg.jpg") no-repeat ;
+ background: url("../images/bgImg.jpg") no-repeat ;
  background-size: cover;
  height: 600px;
  color: white;
@@ -24,6 +24,7 @@
    
 }
 
+  
 .heading{
     color:rgb(73, 9, 36);
     margin-top: -30px;

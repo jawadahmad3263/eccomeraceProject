@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 import Styles from "./totalPrice.module.css";
 function TotalPrice() {
   return (
@@ -22,7 +23,7 @@ function TotalPrice() {
        <p>$310</p>
       </div>
       <div className={Styles.checkoutPageButton}>
-          <button className={`btn btn-outline-primary ${Styles.btnStyle} `}>Chectout Page</button>
+          <Link  to="/checkout" className={`btn btn-outline-primary ${Styles.btnStyle} `}>Chectout Page</Link>
       </div>
      
     </div>
