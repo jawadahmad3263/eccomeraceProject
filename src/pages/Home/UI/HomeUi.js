@@ -16,7 +16,9 @@ export default function HomeUi(props) {
 
           {props.jewelary?.filter((jewelary,index)=>index<3).map((jewelary,index) => {
             return (
+           
              <Card product={jewelary} index={index}/>
+         
             );
           })}
             <div className={Styles.linkWrapper}>

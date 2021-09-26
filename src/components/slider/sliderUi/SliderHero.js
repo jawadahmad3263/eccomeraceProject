@@ -6,9 +6,14 @@ import tshirts from "../assets/tshirts.jpg";
 import electronics from "../assets/electronics.jpg";
 import jawellary from "../assets/jawellary.jpg";
 import shopping from "../assets/shopping.jpg";
+import mens from "../assets/mens.PNG";
+import summerSale from "../assets/summerSale.PNG";
+import shopNow from "../assets/shopNow.PNG";
+import Sale from "../assets/Sale.PNG";
 
 function SliderHero() {
-  let arr = [tshirts, electronics, jawellary, shopping];
+  
+  let arr=[tshirts,electronics,jawellary,shopping ,Sale, shopNow,summerSale,mens];
   const settings = {
     dots: true,
     infinite: true,
@@ -41,7 +46,7 @@ function SliderHero() {
           fontStyle: "italic",
         }}
       >
-        {" "}
+      
         Wellcome to Online Shopping
       </h2>
       <Slider {...settings}>

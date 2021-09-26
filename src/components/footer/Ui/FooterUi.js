@@ -1,32 +1,33 @@
 import React from "react";
 import Styles from "../assets/css/FooterUi.module.css";
+import { Link } from "react-router-dom";
 export default function FooterUi() {
   return (
-    <footer className="text-center text-lg-start bg-light text-muted" style={{color:"rgb(194, 42, 105)", marginTop:50}}>
+    <footer className={`text-center text-lg-start bg-light ${Styles.mainWrapper}`} style={{color:"rgb(194, 42, 105)", marginTop:50}}>
       <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
         <div className="me-5 d-none d-lg-block">
-          <span>Get connected with us on social networks:</span>
+          <span className={Styles.spanStyle}>Get connected with us on social networks:</span>
         </div>
 
         <div className={Styles.footerStyle} style={{color:"rgb(194, 42, 105)"}} >
-          <a href="" className="me-4 text-reset">
+          <Link to="/www.facebook.com" className="me-4 text-reset">
             <i className="fab fa-facebook-f"></i>
-          </a>
-          <a href="" className="me-4 text-reset">
+          </Link>
+          <Link to="www.twitter.com" className="me-4 text-reset">
             <i className="fab fa-twitter"></i>
-          </a>
-          <a href="" className="me-4 text-reset">
+          </Link>
+          <Link to="/google.com" className="me-4 text-reset">
             <i className="fab fa-google"></i>
-          </a>
-          <a href="" className="me-4 text-reset">
+          </Link>
+          <Link to="/instagram.com" className="me-4 text-reset">
             <i className="fab fa-instagram"></i>
-          </a>
-          <a href="" className="me-4 text-reset">
+          </Link>
+          <Link to="/linkedIn.com" className="me-4 text-reset">
             <i className="fab fa-linkedin"></i>
-          </a>
-          <a href="" className="me-4 text-reset">
+          </Link>
+          <Link to="/github.com" className="me-4 text-reset">
             <i className="fab fa-github"></i>
-          </a>
+          </Link>
         </div>
       </section>
 
@@ -35,7 +36,7 @@ export default function FooterUi() {
           <div className="row mt-3">
             <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
               <h6 className="text-uppercase fw-bold mb-4">
-                <i className="fas fa-gem me-3"></i>Company name
+                <i className="fas fa-gem me-3"></i>Iplex Business and Development
               </h6>
               <p>
                 Here you can use rows and columns to organize your footer
@@ -47,24 +48,24 @@ export default function FooterUi() {
             <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
               <h6 className="text-uppercase fw-bold mb-4">Products</h6>
               <p>
-                <a href="#!" className="text-reset">
-                  Angular
-                </a>
+                <Link to="/" className="text-reset">
+                  Jewellary
+                </Link>
               </p>
               <p>
-                <a href="#!" className="text-reset">
-                  React
-                </a>
+                <Link to="/" className="text-reset">
+                  Electronics
+                </Link>
               </p>
               <p>
-                <a href="#!" className="text-reset">
-                  Vue
-                </a>
+                <Link  to="/" className="text-reset">
+                  Wommen Clothes
+                </Link>
               </p>
               <p>
-                <a href="#!" className="text-reset">
-                  Laravel
-                </a>
+                <Link to="/" className="text-reset">
+                  Men's Cloths
+                </Link>
               </p>
             </div>
 
@@ -72,31 +73,31 @@ export default function FooterUi() {
               <h6 className={`text-uppercase fw-bold mb-4 ${Styles.footerStyle}`}>Useful links</h6>
             
               <p>
-                <a href="#!" className="text-reset">
+                <Link to="/" className="text-reset">
                   Pricing
-                </a>
+                </Link>
               </p>
               <p>
-                <a href="#!" className="text-reset">
+                <Link to="/" className="text-reset">
                   Settings
-                </a>
+                </Link>
               </p>
               <p>
-                <a href="#!" className="text-reset">
+                <Link to="/" className="text-reset">
                   Orders
-                </a>
+                </Link>
               </p>
               <p>
-                <a href="#!" className="text-reset">
+                <Link to="/" className="text-reset">
                   Help
-                </a>
+              </Link>
               </p>
             </div>
 
             <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
               <h6 className="text-uppercase fw-bold mb-4">Contact</h6>
               <p>
-                <i className="fas fa-home me-3"></i> New York, NY 10012, US
+                <i className="fas fa-home me-3"></i> Iplex, NY 10012, US
               </p>
               <p>
                 <i className="fas fa-envelope me-3"></i>
@@ -116,9 +117,9 @@ export default function FooterUi() {
         className="text-center p-4"
       >
         © 2021 Copyright:
-        <a className="text-reset fw-bold" href="https://mdbootstrap.com/">
-          MDBootstrap.com
-        </a>
+        <p className="text-reset fw-bold">
+          DEVELOP BY: JAWAD & HAMID ALI
+        </p>
       </div>
     </footer>
   );
