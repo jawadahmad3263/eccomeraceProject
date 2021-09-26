@@ -14,17 +14,17 @@ const cartReducer = (state = initialState, action) => {
         ],
       };
     case "QUANTITY_PLUS":
-      var tempArray = [...state.cartData];
-      for (var i = 0; i < tempArray.length; i++) {
-        if (tempArray[i].id === action.payload) {
-          tempArray[i].quantity += 1;
+      var tempArry = [...state.cartData];
+      for (var i = 0; i < tempArry.length; i++) {
+        if (tempArry[i].id === action.payload) {
+          tempArry[i].quantity += 1;
 
           break;
         }
       }
       return {
         ...state,
-        cartData: [...tempArray],
+        cartData: [...tempArry],
       };
     case "QUANTITY_MINUS":
       var tempArray = [...state.cartData];
