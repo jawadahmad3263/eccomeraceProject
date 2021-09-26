@@ -1,5 +1,6 @@
 import React from "react";
 import Styles from "../assets/css/FooterUi.module.css";
+import { Link } from "react-router-dom";
 export default function FooterUi() {
   return (
     <footer className={`text-center text-lg-start bg-light ${Styles.mainWrapper}`} style={{color:"rgb(194, 42, 105)", marginTop:50}}>
@@ -9,24 +10,24 @@ export default function FooterUi() {
         </div>
 
         <div className={Styles.footerStyle} style={{color:"rgb(194, 42, 105)"}} >
-          <a href="" className="me-4 text-reset">
+          <Link to="/www.facebook.com" className="me-4 text-reset">
             <i className="fab fa-facebook-f"></i>
-          </a>
-          <a href="" className="me-4 text-reset">
+          </Link>
+          <Link to="www.twitter.com" className="me-4 text-reset">
             <i className="fab fa-twitter"></i>
-          </a>
-          <a href="" className="me-4 text-reset">
+          </Link>
+          <Link to="/google.com" className="me-4 text-reset">
             <i className="fab fa-google"></i>
-          </a>
-          <a href="" className="me-4 text-reset">
+          </Link>
+          <Link to="/instagram.com" className="me-4 text-reset">
             <i className="fab fa-instagram"></i>
-          </a>
-          <a href="" className="me-4 text-reset">
+          </Link>
+          <Link to="/linkedIn.com" className="me-4 text-reset">
             <i className="fab fa-linkedin"></i>
-          </a>
-          <a href="" className="me-4 text-reset">
+          </Link>
+          <Link to="/github.com" className="me-4 text-reset">
             <i className="fab fa-github"></i>
-          </a>
+          </Link>
         </div>
       </section>
 
@@ -47,24 +48,24 @@ export default function FooterUi() {
             <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
               <h6 className="text-uppercase fw-bold mb-4">Products</h6>
               <p>
-                <a href="#!" className="text-reset">
+                <Link to="/" className="text-reset">
                   Jewellary
-                </a>
+                </Link>
               </p>
               <p>
-                <a href="#!" className="text-reset">
+                <Link to="/" className="text-reset">
                   Electronics
-                </a>
+                </Link>
               </p>
               <p>
-                <a href="#!" className="text-reset">
+                <Link  to="/" className="text-reset">
                   Wommen Clothes
-                </a>
+                </Link>
               </p>
               <p>
-                <a href="#!" className="text-reset">
+                <Link to="/" className="text-reset">
                   Men's Cloths
-                </a>
+                </Link>
               </p>
             </div>
 
@@ -72,24 +73,24 @@ export default function FooterUi() {
               <h6 className={`text-uppercase fw-bold mb-4 ${Styles.footerStyle}`}>Useful links</h6>
             
               <p>
-                <a href="#!" className="text-reset">
+                <Link to="/" className="text-reset">
                   Pricing
-                </a>
+                </Link>
               </p>
               <p>
-                <a href="#!" className="text-reset">
+                <Link to="/" className="text-reset">
                   Settings
-                </a>
+                </Link>
               </p>
               <p>
-                <a href="#!" className="text-reset">
+                <Link to="/" className="text-reset">
                   Orders
-                </a>
+                </Link>
               </p>
               <p>
-                <a href="#!" className="text-reset">
+                <Link to="/" className="text-reset">
                   Help
-                </a>
+              </Link>
               </p>
             </div>
 
