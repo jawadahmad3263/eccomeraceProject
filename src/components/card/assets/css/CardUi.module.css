@@ -1,26 +1,47 @@
 /* card css */
-.cardBodyStyle{
-    height: 180px;
-}
+
 .cardStyle{
     border-radius: 1px;
+    height: 520px;
+ 
+    
 }
 .cardStyle img{
     width: 300px;
-    height: 300px;
+    height: 270px;
     align-self: center;
 }
-.sizeofimage{
-  
-    height: 250px;
-    width: 300;
+
+.titleStyle{
+    height: 80px;
+    width: 100%;
 }
-.col-lg-3.col-md-3 .card{
-height: 450px;
+.priceStyle{
+ padding-top: 15px;
+ padding-bottom: 10px;
 }
+
 
 .buttonMainWrapper{
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    align-items: center;
+   margin-top: -15px;
+    margin-bottom: 15px;
 }
+.showDetailStyle{
+    text-decoration:none ;
+   
+    margin-bottom: 40px;
+    padding:10px;
+    
+    border-radius: 5px;
+    background-color: rgb(60, 118, 86);
+   
+    color: white;
+}
+.showDetailStyle:hover{
+    color: white;
+}
+

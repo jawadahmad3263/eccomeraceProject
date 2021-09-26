@@ -18,7 +18,7 @@ export default function AllProductsUi(props) {
             <Loader />
           </div>
         ) : (
-          <div className="row gy-5">
+          <div className="row gy-4">
             {products?.map((product, index) => {
               return <Card product={product} index={index} />;
             })}

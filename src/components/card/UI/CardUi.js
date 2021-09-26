@@ -15,11 +15,11 @@ export default function CardUi(props) {
           <div className={Styles.cardBodyStyle}>
             <div className="titlestyle">
           
-              <h5 className="card-title">{product.title}</h5>
-              <p className="card-text">
+              <h5 className={`card-title ${Styles.titleStyle}`}>{product.title}</h5>
+              <p className={`card-text ${Styles.priceStyle}` }>
               
                 <b>Price:</b> &nbsp;
-                <span className="text-danger">{product.price}$</span>
+                <span className="text-danger">${product.price}</span>
               </p>
               <div className={Styles.buttonMainWrapper}>
                 <div>
@@ -37,21 +37,19 @@ export default function CardUi(props) {
               
                 </div>
                 <div>
-                <Link className={`btn btn-info ${Styles.showDetailStyle}`} to="/detail">Show Detail</Link>
+                <Link className={Styles.showDetailStyle}  to="/detail">Show Detail</Link>
               </div>
               </div>
              
               
             </div>
             <div className={Styles.ratingWrapper}>
-              <div>
-                <h6>User Reviews</h6>
-              </div>
               <div className={Styles.starStyling}>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
+                <span  className="fa fa-star checked"></span>
+                <span  className="fa fa-star checked"></span>
+                <span  className="fa fa-star checked"></span>
+                <span  className="fa fa-star checked"></span>
+                <span  className="fa fa-star checked"></span>
               </div>
             </div>
           </div>
