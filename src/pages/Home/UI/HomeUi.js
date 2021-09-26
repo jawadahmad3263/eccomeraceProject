@@ -31,8 +31,7 @@ export default function HomeUi(props) {
         <div className="row gy-5">
           {props.menCloths?.filter((menCloths,index)=>index<3).map((menCloths,index) => {
             return (
-              <div key={index}>
-             <Card product={menCloths} index={index}/> </div>
+             <Card product={menCloths} index={index}/>
             );
           })}
           <div className={`conatiner ${Styles.linkWrapper}`}>
@@ -44,9 +43,7 @@ export default function HomeUi(props) {
         <div className="row gy-5">
           {props.womenCloths?.filter((womenCloths,index)=>index<3).map((womenCloths,index) => {
             return (
-              <div key={index}>
              <Card product={womenCloths} index={index}/>
-             </div>
             );
           })}
           <div className={`conatiner ${Styles.linkWrapper}`}>
@@ -57,8 +54,7 @@ export default function HomeUi(props) {
         <div className="row gy-5">
           {props.electronics?.filter((electronics,index)=>index<3).map((electronics,index) => {
             return (
-            <div key={index}>
-             <Card product={electronics} index={index}/></div>
+             <Card product={electronics} index={index}/>
             );
           })}
           <div className={`conatiner ${Styles.linkWrapper}`}>
