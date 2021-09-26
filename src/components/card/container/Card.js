@@ -8,6 +8,7 @@ export default function Card(props) {
     const {product,index} = props;
     //fun to add selected items to cart
     const addItem = () => {
+        product["quantity"]=1
         dispatch(cartAction.Add(product));
     }
     const addedItems= useSelector((state)=>state.cartReducer.cartData);

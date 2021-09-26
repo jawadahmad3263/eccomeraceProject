@@ -12,7 +12,23 @@ const Delete = (id) => {
         payload: id,
     }
 }
+const quantityPlus = (id) => {
+    console.log("here plus");
+    return {
+        type: 'QUANTITY_PLUS',
+        payload: id,
+    }
+}
+const quantityMinus = (id) => {
+    console.log("here minus");
+    return {
+        type: 'QUANTITY_MINUS',
+        payload: id,
+    }
+}
 export default{
     Add,
-    Delete
+    Delete,
+    quantityPlus,
+    quantityMinus
 }
