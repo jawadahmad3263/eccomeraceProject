@@ -4,7 +4,7 @@ const cartReducer = (state = initialState, action) => {
     case "ADD_ITEM":
       return {
         ...state,
-        cartData:[...state.cartData,action.payload]
+        cartData:[...state.cartData,action.payload],
       };
     // case "DELETE_ITEM":
     //   return {
