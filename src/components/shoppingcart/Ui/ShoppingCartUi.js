@@ -1,5 +1,7 @@
 import React from 'react'
 import Styles from "../assets/css/ShoppingCartUi.module.css";
+import { Link } from 'react-router-dom';
+import cartImg from "../assets/icons/cartImg.jpg";
 export default function ShoppingCartUi(props) {
     const { addedItems,deleteItem,quantity,quantityPlus,quantityMinus} = props;
     return (
@@ -46,7 +48,13 @@ export default function ShoppingCartUi(props) {
                 </div>
               </div>
             })}</div>
-        :<div><h2>No item added to cart yet</h2></div>
+        :<div className={Styles.emptyCartStyle}>
+          <img src={cartImg} alt="empty cart"/>
+          <h2>Your Cart is empty </h2>
+          <p>Add something to Make me Happy:) </p>
+          <Link className="btn btn-primary"> Continoue Shopping</Link>
+          
+          </div>
 }
         </div>
             )

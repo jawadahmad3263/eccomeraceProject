@@ -108,3 +108,16 @@
 .actionsStyle button:visited {
   outline: none;
 }
+
+.emptyCartStyle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: -20px;
+
+}
+.emptyCartStyle img{
+  width: 300px;
+  height: 300px;
+}
