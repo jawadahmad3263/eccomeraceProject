@@ -41,7 +41,7 @@ function DetailUI(props) {
                   <b>Description : &nbsp; </b>
                   {product.description}
                 </p>
-                <p>Rating:<b>{product.rating.rate}</b></p>
+                {/* <p>Rating:<b>{product.rating.rate}</b></p> */}
                 <div>
                   {checkItem === false ? (
                     <button className="btn btn-primary" onClick={addItem}>
