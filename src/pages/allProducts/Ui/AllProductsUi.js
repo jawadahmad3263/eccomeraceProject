@@ -8,7 +8,10 @@ export default function AllProductsUi(props) {
   const products = useSelector((state) => state.allProductsReducer.allProducts);
   return (
     <div className={`container ${Styles.homepage}`}>
-      <h3>All Products</h3>
+      <div className={Styles.allProductStyle}>
+      <h3>Available Products</h3>
+      </div>
+   
       <div>
         {loading === true ? (
           <div className={Styles.spinner}>
