@@ -7,7 +7,7 @@ export default function CategoryUi(props) {
     console.log("category=",category);
     return (
         <div className={Styles.detailWrapper}>
-            <Link className={Styles.backlinkStyle} to="/">Back To Home</Link>
+            <Link className={Styles.backlinkStyle} to="/">Go Back</Link>
             <p></p>
             <p></p>
            

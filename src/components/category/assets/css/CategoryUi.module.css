@@ -6,14 +6,19 @@
     margin-right: auto;
 }
 
-.detailWrapper a{
+.detailWrapper .backlinkStyle{
     text-decoration:none ;
     font-size: 20px;
+    border: none;
     padding: 10px;
     margin-bottom: 40px;
     background-color: lightgray;
    
     color:black;
+}
+.backlinkStyle:focus{
+    visibility: none;
+    outline: none;
 }
 .detailWrapper p{
     padding: 5px;

@@ -6,10 +6,12 @@
     justify-content: start;
     padding: 20px;
     flex-direction: column;
+    height: 400px;
 
 }
 .priceContent{
    padding: 0px;
+
 
 }
 

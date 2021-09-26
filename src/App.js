@@ -15,6 +15,8 @@ import FooterUi from './components/footer/Ui/FooterUi';
 import Shipping from './components/shipping/Shipping';
 import Category from './components/category/container/Category';
 import CartPage from './pages/cart/container/CartPage';
+import Detail from './components/detailComponent/container/Detail';
+
 
 
 function App() {
@@ -28,6 +30,7 @@ function App() {
           <Route path="/cartPage" component={CartPage}/>
            <Route path="/checkout" component={Shipping}/>
            <Route path="/category/:categoryType" component={Category}/>
+           <Route exact path="/detail" component={Detail}/>
         </Switch>
         <FooterUi/>
     </Router>

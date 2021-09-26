@@ -44,3 +44,16 @@
       height: 500px;
 
   }
+
+  .allProductStyle{
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      padding-top: 30px;
+      padding-bottom: 25px;
+
+  }
+  .allProductStyle h3{
+      font-size: 35px;
+      color: rgb(194, 42 , 105);
+  }
