@@ -1,7 +1,7 @@
 import React from 'react'
 import Styles from "../assets/css/ShoppingCartUi.module.css";
 export default function ShoppingCartUi(props) {
-    const { addedItems,deleteItem } = props;
+    const { addedItems,deleteItem,quantity,quantityPlus,quantityMinus} = props;
     return (
         <div>
             <div className={Styles.items}>
@@ -19,16 +19,18 @@ export default function ShoppingCartUi(props) {
                     </div>
                     <div className={Styles.cartContentStyle}>
                       <h4 className={Styles.cartName}>{items.title}</h4>
-                      <p>White</p>
                     </div>
                     
                      <div>
                        <div><h5>Quantity</h5></div>
                      <div className={Styles.actionsStyle}>
                    
-                   <button><i class="fas fa-plus"></i></button>
-                   <p className={Styles.cartQuantity}>3</p>
-                   <button class><i class="fas fa-minus"></i></button>
+                   <button onClick={()=>quantityPlus(items.id)}><i class="fas fa-plus"></i></button>
+                   <p className={Styles.cartQuantity}>{items.quantity}</p>
+                   {items.quantity!==1?
+                  <button onClick={()=>quantityMinus(items.id)}><i class="fas fa-minus"></i></button>:
+                  <button disabled><i class="fas fa-minus"></i></button>
+                }
                  </div>
                      </div>
                    
