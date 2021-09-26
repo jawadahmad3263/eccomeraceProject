@@ -1,19 +1,15 @@
 import { combineReducers } from "redux";
 
-import allProductsReducer from './allProductsReducer';
+import allProductsReducer from "./allProductsReducer";
 import categoryReducer from "./categoryReducer";
-import authenticateUserReducer from './authenticateUserReducer';
-// import menCategoriesReducer from './menCategoriesReducer';
-// import womenCategoriesReducer from './womenCategoriesReducer';
-// import electronicCategoriesReducer from './electronicCategoriesReducer'
+import authenticateUserReducer from "./authenticateUserReducer";
+import cartReducer from "./cartReducer";
 
-const rootReducer  = combineReducers({
-    allProductsReducer,
-    categoryReducer,
-    authenticateUserReducer,
-    // menCategoriesReducer,
-    // womenCategoriesReducer,
-    // electronicCategoriesReducer,
-})
+const rootReducer = combineReducers({
+  allProductsReducer,
+  categoryReducer,
+  authenticateUserReducer,
+  cartReducer,
+});
 
 export default rootReducer;

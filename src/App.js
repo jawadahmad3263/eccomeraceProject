@@ -12,9 +12,9 @@ import AllProducts from './pages/allProducts/container/AllProducts'
 
 import Navbar from './components/navbar/container/Navbar';
 import FooterUi from './components/footer/Ui/FooterUi';
-import Cart from './pages/cart/Cart';
 import Shipping from './components/shipping/Shipping';
 import Category from './components/category/container/Category';
+import CartPage from './pages/cart/container/CartPage';
 
 
 function App() {
@@ -25,7 +25,7 @@ function App() {
           <Route exact path="/" component={Home}/>
           <Route  path="/Products" component={AllProducts}/>
           <Route  path="/Login" component={Login}/>
-          <Route path="/shopping-cart" component={Cart}/>
+          <Route path="/cartPage" component={CartPage}/>
            <Route path="/checkout" component={Shipping}/>
            <Route path="/category/:categoryType" component={Category}/>
         </Switch>

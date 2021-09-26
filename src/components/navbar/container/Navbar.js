@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from "react-redux";
 import authenticateUserReducer  from '../../../redux/reducers/authenticateUserReducer';
 
 export default function Navbar() {
+    const addedItems= useSelector((state)=>state.cartReducer.cartData);
     // const [username,setUsername] = useState("");
     // const registerdUsers = useSelector(
     //     (state) => state.authenticateUserReducer.registerdUsers
@@ -18,6 +19,6 @@ export default function Navbar() {
     // },[])
     
     return (
-        <NavbarUi/>
+        <NavbarUi counter={addedItems.length}/>
     )
 }

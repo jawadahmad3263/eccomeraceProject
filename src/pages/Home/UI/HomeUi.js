@@ -9,7 +9,6 @@ export default function HomeUi(props) {
     return (
         <div className={`container ${Styles.homepage}`}>
         <div><SliderHero/></div>
-        {/* <h3 className="text-center">Wellcome TO Online Shopping</h3> */}
         <div className="py-5">
           
             <h1 className={`text-center py-2 ${Styles.headings} ` }>Jewellary </h1>
@@ -21,7 +20,7 @@ export default function HomeUi(props) {
             );
           })}
             <div className={Styles.linkWrapper}>
-              <span>click to See more jewelery products</span>
+              <span>To See more jewelery products</span>
               <Link className={Styles.link} to={`/category/${"jewelary"}`}>Click Here</Link>
               </div>
         </div> 
@@ -34,7 +33,7 @@ export default function HomeUi(props) {
             );
           })}
           <div className={`conatiner ${Styles.linkWrapper}`}>
-              <span>Click to See   Men's Clothes  </span>
+              <span>To See More Men's Clothes  </span>
               <Link className={Styles.link} to={`/category/${"menCloths"}`}>Click Here</Link>
               </div>
         </div> 
@@ -46,7 +45,7 @@ export default function HomeUi(props) {
             );
           })}
           <div className={`conatiner ${Styles.linkWrapper}`}>
-              <span>Click to see  more WomenClothes</span>
+              <span>To see more Women Clothes</span>
               <Link className={Styles.link} to={`/category/${"womenCloths"}`} >Click Here</Link>
               </div>
         </div> 
@@ -57,7 +56,7 @@ export default function HomeUi(props) {
             );
           })}
           <div className={`conatiner ${Styles.linkWrapper}`}>
-              <span>Click To see Electronic products </span>
+              <span>To see more electronic products </span>
               <Link className={Styles.link} to={`/category/${"electronics"}`}>Click Here</Link>
               </div>
         </div> 

@@ -4,6 +4,7 @@ export const initialState = {
   menClothes:[],
   womenClothes:[],
   electronics:[],
+  cartData: [],
   loading: false,
   error: null,
   total: 0,
@@ -40,5 +41,5 @@ export const initialState = {
       loginStatus: false,
     },
   ],
-  cartData: [],
+  
 };
