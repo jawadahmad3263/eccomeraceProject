@@ -30,7 +30,7 @@ function App() {
           <Route path="/cartPage" component={CartPage}/>
            <Route path="/checkout" component={Shipping}/>
            <Route path="/category/:categoryType" component={Category}/>
-           <Route exact path="/detail" component={Detail}/>
+           <Route exact path="/detail/:id" component={Detail}/>
         </Switch>
         <FooterUi/>
     </Router>
