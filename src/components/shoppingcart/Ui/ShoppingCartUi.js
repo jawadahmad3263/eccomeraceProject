@@ -1,7 +1,7 @@
 import React from 'react'
 import Styles from "../assets/css/ShoppingCartUi.module.css";
 export default function ShoppingCartUi(props) {
-    const {addedItems} = props;
+    const { addedItems,deleteItem } = props;
     return (
         <div>
             <div className={Styles.items}>
@@ -38,7 +38,7 @@ export default function ShoppingCartUi(props) {
                     </div>
                     <div className={Styles.removeStyle}>
                       <h5 className={Styles.action}>Action</h5>
-                      <button ><i class="fas fa-trash-alt"></i></button>
+                      <button type="primary" onClick={()=>deleteItem(items.id)}><i class="fas fa-trash-alt"></i></button>
                     </div>
                   </div>
                 </div>

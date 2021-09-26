@@ -6,11 +6,11 @@ const cartReducer = (state = initialState, action) => {
         ...state,
         cartData:[...state.cartData,action.payload],
       };
-    // case "DELETE_ITEM":
-    //   return {
-    //     ...state,
-       
-    //   };
+    case "DELETE_ITEM":
+      return {
+        ...state,
+        cartData:[...state.cartData.filter(data=>data.id!==action.payload)]
+      };
  
     default:
       return state;

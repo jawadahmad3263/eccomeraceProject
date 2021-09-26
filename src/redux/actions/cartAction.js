@@ -7,6 +7,7 @@ const Add = (item) => {
 }
 
 const Delete = (id) => {
+    console.log("here delete action");
     return {
         type: 'DELETE_ITEM',
         payload: id,
