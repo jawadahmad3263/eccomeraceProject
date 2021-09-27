@@ -1,12 +1,12 @@
 .mainPriceWrapper{
-    width: 300px;
+    width: 400px;
     margin-top: 165px;
     border:1px solid lightgray;
     display:flex;
     justify-content: start;
     padding: 20px;
     flex-direction: column;
-    height: 400px;
+    /* height: 400px; */
 
 }
 .priceContent{
@@ -22,6 +22,13 @@
     border-bottom: 0.5px solid lightgray;
     margin-top: 30px;
    
+}
+.totalProduct{
+    display: flex;
+    /* justify-content: space-around; */
+    flex-direction: column;
+    border-bottom: 0.5px solid lightgray;
+    margin-top: 30px;
 }
 
 .totalamount{

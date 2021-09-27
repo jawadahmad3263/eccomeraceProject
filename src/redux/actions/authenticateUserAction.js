@@ -5,8 +5,10 @@ const loginUser = (credintial) => {
     payload: credintial,
   };
 };
-const logoutUser = () => {
-  return { type: "LOGOUT_USER" };
+const logoutUser = (user) => {
+  return { type: "LOGOUT_USER",
+  payload: user,
+};
 };
 export default {
   loginUser,
