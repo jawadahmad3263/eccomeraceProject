@@ -27,8 +27,8 @@ const cartReducer = (state = initialState, action) => {
         cartData: [...tempArry],
       };
     case "QUANTITY_MINUS":
-      var tempArray = [...state.cartData];
-      for (var i = 0; i < tempArray.length; i++) {
+      let tempArray = [...state.cartData];
+      for (let i = 0; i < tempArray.length; i++) {
         if (tempArray[i].id === action.payload) {
           tempArray[i].quantity -= 1;
 

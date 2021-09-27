@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from 'react';
+import React, { useEffect } from 'react';
 import fetchCategory from '../../../redux/actions/fetchCategory';
 import { useParams } from 'react-router'
 import CategoryUi from '../Ui/CategoryUi'
@@ -35,7 +35,8 @@ export default function Category() {
             category = electronics
             break;
         }
-           
+        default:
+            return []   
          
     }
    

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import CardUi from "../UI/CardUi";
 import { useDispatch, useSelector } from "react-redux";
 import cartAction from "../../../redux/actions/cartAction";
@@ -14,7 +14,7 @@ export default function Card(props) {
     dispatch(cartAction.Add(product));
   };
   const addedItems = useSelector((state) => state.cartReducer.cartData);
-  const products = useSelector((state) => state.allProductsReducer.allProducts);
+
 
   //check if item is added to cart before
 

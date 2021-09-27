@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { useHistory } from "react-router";
 import action from "../../../redux/actions/authenticateUserAction";
-import authenticateUserReducer from "../../../redux/reducers/authenticateUserReducer";
 import LoginUi from "../UI/LoginUi";
 
 export default function Login() {
@@ -36,7 +34,6 @@ export default function Login() {
     console.log("credintial", credintial);
     const user = registerdUsers.find((user)=>(user.email===credintial.email&&user.password===credintial.password));
     const passCheck = registerdUsers.find((user)=>(user.email===credintial.email&&user.password!==credintial.password));
-    const emailCheck = registerdUsers.find((user)=>user.email!==credintial.email);
     console.log("kiki",user)
     
     if(user){
