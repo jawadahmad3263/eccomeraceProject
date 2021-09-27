@@ -10,6 +10,7 @@ function DetailUI() {
       <div className={Styles.linkWrapper}>
         <Link to="/">Go back</Link>
       </div>
+      
       <div className={Styles.detailWrapper}>
         <div className={Styles.imgWrapper}>
           <img src={Sale} alt="SaleImages" className="img-fluid" />

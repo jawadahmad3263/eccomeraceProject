@@ -7,12 +7,13 @@ export default function ShoppingCartUi(props) {
     return (
         <div>
             <div className={Styles.items}>
+                
                   <h4>Your's Shopping Cart Have {addedItems.length} Items</h4>
                 </div>
             {addedItems.length>0?
             <div>{addedItems.map((items,index)=>{
                return <div>
-                
+              
                 <div className={Styles.cart_container}>
                   <div className={Styles.singleCart}>
                     <div className={Styles.number}>{index+1}</div>
@@ -20,11 +21,11 @@ export default function ShoppingCartUi(props) {
                       <img src={items.image} className={Styles.imageSize} alt="mobile" />
                     </div>
                     <div className={Styles.cartContentStyle}>
-                      <h4 className={Styles.cartName}>{items.title}</h4>
+                      <p className={Styles.cartName}>{items.title}</p>
                     </div>
                     
                      <div>
-                       <div><h5>Quantity</h5></div>
+                       <div className={Styles.quanty}><h5>Quantity</h5></div>
                      <div className={Styles.actionsStyle}>
                    
                    <button onClick={()=>quantityPlus(items.id)}><i class="fas fa-plus"></i></button>
@@ -37,7 +38,7 @@ export default function ShoppingCartUi(props) {
                      </div>
                    
                     <div className={Styles.cartContentStyle}>
-                      <p className="h5">Price</p>
+                      <p className={`h5 ${Styles.para}`}>Price</p>
                       <p className={Styles.price}>${items.price}</p>
                     </div>
                     <div className={Styles.removeStyle}>
