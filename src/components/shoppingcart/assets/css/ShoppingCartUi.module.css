@@ -12,12 +12,13 @@
 .cartContentStyle {
   display: flex;
   flex-direction: column;
-  
-  padding: 0px 30px;
+   width: 100%;  
   justify-content: space-between;
 }
+
 .price{
     margin-top: 10px;
+    text-align: center;
 }
 .cartimageStyle {
   padding: 10px;
@@ -39,10 +40,23 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
+  padding-left: 20px;
+
+
+}
+.quanty{
+  padding-left: 20px;
 }
 
 .cartName {
-  max-width: 70%;
+  max-width: 100%;
+  font-size: 20px;
+
+}
+.para{
+  text-align: center;
+
 }
 
 .number {

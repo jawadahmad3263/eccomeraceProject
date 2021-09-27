@@ -7,9 +7,10 @@ export default function CategoryUi(props) {
     console.log("category=",category);
     return (
         <div className={Styles.detailWrapper}>
+          <div className={Styles.categoryNameStyle}>
             <Link className={Styles.backlinkStyle} to="/">Go Back</Link>
-            <p></p>
-            <p></p>
+            <h2>{category[0].category}</h2>
+            </div>
            
              <div className={`container${Styles.detailStyle} `}>
           
