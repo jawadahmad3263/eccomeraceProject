@@ -20,6 +20,7 @@ import Detail from './components/detailComponent/container/Detail';
 
 
 function App() {
+ 
   return (
       <Router>
         <Navbar/>
