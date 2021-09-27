@@ -27,7 +27,7 @@ export default function NavbarUi(props) {
             </li>
             <li className={`nav-item  ${Styles.liststyle}`}>
               <Link to="/Products" className={`nav-link ${Styles.linkstyle} `}>
-                Products
+               Products
               </Link>
             </li>
             <li className={`nav-item  ${Styles.liststylelast}`}>

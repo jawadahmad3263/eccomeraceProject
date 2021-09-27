@@ -17,22 +17,11 @@ function SliderHero() {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 1000,
+    speed: 700,
     slidesToShow: 1,
     autoplay: true,
     autoplaySpeed: 2000,
     slidesToScroll: 1,
-  };
-
-  const sliderContent = (item, index) => {
-    return (
-      <div className={Styles.sliderMain} key={index}>
-        <div className={Styles.imagewarapper}>
-          <img src={item} alt="tshirts" className={Styles.imgStyle} />
-          <h1 className={Styles.slidContent}>Sale Upto 50%</h1>
-        </div>
-      </div>
-    );
   };
   return (
     <div className="container">
@@ -51,7 +40,13 @@ function SliderHero() {
       </h2>
       <Slider {...settings}>
         {arr.map((item, index) => {
-          return sliderContent(item, index);
+          return (
+            <div className={Styles.sliderMain} key={index}>
+            <div className={Styles.imagewarapper}>
+              <img src={item} alt="Tshirts" className={Styles.imgStyle} />
+            </div>
+          </div>
+          )
         })}
       </Slider>
     </div>

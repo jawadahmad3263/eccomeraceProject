@@ -52,6 +52,7 @@ export default function HomeUi(props) {
               <Link className={Styles.link} to={`/category/${"womenCloths"}`} >Click Here</Link>
               </div>
         </div> 
+        <h1 className={`text-center py-2 ${Styles.headings} ` }>Electronics </h1>
         <div className="row gy-5">
           {props.electronics?.filter((electronics,index)=>index<3).map((electronics,index) => {
             return (
