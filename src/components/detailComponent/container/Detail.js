@@ -6,6 +6,7 @@ import fetchSingleProduct from '../../../redux/actions/fetchSingleProduct';
 import cartAction from '../../../redux/actions/cartAction';
 function Detail() {
     let {id} =useParams();
+    var checkItem = false;
     const dispatch = useDispatch();
     useEffect(() => {
     dispatch(fetchSingleProduct(id));
@@ -17,11 +18,12 @@ function Detail() {
         dispatch(cartAction.Add(product));
     }
     const addedItems= useSelector((state)=>state.cartReducer.cartData);
-   //check if item is added to cart before
-   const check=()=>{
-    return addedItems.includes(product);
-}
-var checkItem=check();
+    addedItems?.find((item, index) => {
+        if (item.id === product.id) {
+          checkItem = true;
+        }
+      });
+
     return (
             <DetailUI addItem={addItem} checkItem={checkItem}/>
     )

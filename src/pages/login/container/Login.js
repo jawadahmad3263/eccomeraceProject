@@ -12,12 +12,16 @@ export default function Login() {
     email: "",
     password: "",
   });
+  const [logStatus,setLogStatus] = useState(false);
+  const [logUser,setLogUser] = useState({});
   const dispatch = useDispatch();
   // getting registered users data from store
   const registerdUsers = useSelector(
     (state) => state.authenticateUserReducer.registerdUsers
   );
-  console.log("users", registerdUsers);
+  // console.log("users", registerdUsers);
+  // const loginUser = registerdUsers.filter((user)=>user.loginStatus===true)
+  // console.log("checkStatus",loginUser)
   //function to set credintial
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -34,8 +38,11 @@ export default function Login() {
     const passCheck = registerdUsers.find((user)=>(user.email===credintial.email&&user.password!==credintial.password));
     const emailCheck = registerdUsers.find((user)=>user.email!==credintial.email);
     console.log("kiki",user)
+    
     if(user){
       dispatch(action.loginUser(credintial));
+      setLogStatus(user.loginStatus)
+      setLogUser(user);
     }
     else if(passCheck)
     {
@@ -47,6 +54,11 @@ export default function Login() {
     }
 
   };
+  //function to logout user
+  const handleLogout = (logUser) =>{
+    dispatch(action.logoutUser(logUser));
+    setLogStatus(false);
+  }
 
   return (
     <LoginUi
@@ -54,7 +66,10 @@ export default function Login() {
       passwordLabel={passwordLabel}
       handleChange={handleChange}
       handleLogin={handleLogin}
+      handleLogout={handleLogout}
       credintial={credintial}
+      logStatus={logStatus}
+      logUser={logUser}
     />
   );
 }
