@@ -5,7 +5,7 @@ import Styles from "../assets/css/HomeUi.module.css";
 import Card from '../../../components/card/container/Card';
 
 export default function HomeUi(props) {
-  const {jewelary,menCloths,womenCloths,electronics,logStatus} = props;
+  const {jewelary,menCloths,womenCloths,electronics} = props;
     return (
       
         <div className={`container ${Styles.homepage}`}>
@@ -15,10 +15,10 @@ export default function HomeUi(props) {
             <h1 className={`text-center py-2 ${Styles.headings} ` }>Jewellary </h1>
         <div className={`row gy-5 ${Styles.sectionWrapper}`}>
 
-          {props.jewelary?.filter((jewelary,index)=>index<3).map((jewelary,index) => {
+          {jewelary?.filter((jewelary,index)=>index<3).map((jewelary,index) => {
             return (
            
-             <Card product={jewelary} index={index}/>
+             <Card product={jewelary} index={index} key={index}/>
          
             );
           })}
@@ -30,9 +30,9 @@ export default function HomeUi(props) {
 
         <h1 className={`text-center py-2 ${Styles.headings} ` }>Men's Clothes </h1>
         <div className="row gy-5">
-          {props.menCloths?.filter((menCloths,index)=>index<3).map((menCloths,index) => {
+          {menCloths?.filter((menCloths,index)=>index<3).map((menCloths,index) => {
             return (
-             <Card product={menCloths} index={index}/>
+             <Card product={menCloths} index={index} key={index}/>
             );
           })}
           <div className={`conatiner ${Styles.linkWrapper}`}>
@@ -42,9 +42,9 @@ export default function HomeUi(props) {
         </div> 
         <h1 className={`text-center py-2 ${Styles.headings} ` }>WomenCothes </h1>
         <div className="row gy-5">
-          {props.womenCloths?.filter((womenCloths,index)=>index<3).map((womenCloths,index) => {
+          {womenCloths?.filter((womenCloths,index)=>index<3).map((womenCloths,index) => {
             return (
-             <Card product={womenCloths} index={index}/>
+             <Card product={womenCloths} index={index} key={index}/>
             );
           })}
           <div className={`conatiner ${Styles.linkWrapper}`}>
@@ -54,9 +54,9 @@ export default function HomeUi(props) {
         </div> 
         <h1 className={`text-center py-2 ${Styles.headings} ` }>Electronics </h1>
         <div className="row gy-5">
-          {props.electronics?.filter((electronics,index)=>index<3).map((electronics,index) => {
+          {electronics?.filter((electronics,index)=>index<3).map((electronics,index) => {
             return (
-             <Card product={electronics} index={index}/>
+             <Card product={electronics} index={index} key={index}/>
             );
           })}
           <div className={`conatiner ${Styles.linkWrapper}`}>

@@ -5,8 +5,8 @@ import StarRatings from "react-star-ratings";
 export default function CardUi(props) {
   const { product, index, addItem, checkItem } = props;
   return (
-    <div className="col-md-4 col-lg-4"   key={index}>
-      <div className={`card  p-2 ${Styles.cardStyle}`}>
+    <div className="col-md-4 col-lg-4"  >
+      <div className={`card  p-2 ${Styles.cardStyle}`} key={index} >
         <img
           src={product.image}
           className={`card-img-top image-fluid ${Styles.sizeofimage}`}

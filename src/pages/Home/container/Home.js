@@ -1,15 +1,12 @@
-import React,{useState,useEffect,useHistory} from 'react'
+import React,{useEffect} from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import HomeUi from '../UI/HomeUi';
 import fetchCategory from '../../../redux/actions/fetchCategory';
-import LoginUi from '../../login/UI/LoginUi';
+
 import authenticateUserAction from '../../../redux/actions/authenticateUserAction';
-import Login from '../../login/container/Login';
 
 export default function Home(props) {
-    const history = useHistory;
     const dispatch=useDispatch();
-    const [logStatus,setLogStatus] = useState(false);
     useEffect(()=>{
          dispatch(fetchCategory("jewelery"));
          dispatch(fetchCategory("men's clothing"));
@@ -26,9 +23,10 @@ export default function Home(props) {
     const registerdUsers = useSelector((state) => state.authenticateUserReducer.registerdUsers);
     const checkStatus = () =>{
         const loginUser = registerdUsers.filter((user)=>user.loginStatus===true)
-        console.log("hereee",loginUser);
-        if(loginUser)
-        setLogStatus(loginUser.loginStatus)
+     
+        if(loginUser){
+
+        }
     }
    
     return (

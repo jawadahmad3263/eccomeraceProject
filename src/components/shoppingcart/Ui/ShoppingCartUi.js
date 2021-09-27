@@ -3,7 +3,7 @@ import Styles from "../assets/css/ShoppingCartUi.module.css";
 import { Link } from 'react-router-dom';
 import cartImg from "../assets/icons/cartImg.jpg";
 export default function ShoppingCartUi(props) {
-    const { addedItems,deleteItem,quantity,quantityPlus,quantityMinus} = props;
+    const { addedItems,deleteItem,quantityPlus,quantityMinus} = props;
     return (
         <div>
             <div className={Styles.items}>
