@@ -21,6 +21,7 @@
      margin-right: auto;
      
     padding: 60px 30px 20px 30px ;
+    
    
 }
 
@@ -32,4 +33,30 @@
     padding-bottom: 20px;
    
     font-family: serif;
+}
+
+.logoutStyle{
+    margin-top: 90px;
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+ padding: 80px 0px;
+ background: url("../images/bgImg.jpg") no-repeat ;
+ background-size: cover;
+ height: 600px;
+ color: black;
+ border: 1px solid gray;
+ background-color: rgba(124, 102, 124, 0.781);
+    
+}
+.logoutStyle button{
+    width: 100px;
+    background-color: rgb(73, 9, 36);
+    color: white;
+}
+.logoutStyle .logoutheads{
+    text-transform: uppercase;
 }
