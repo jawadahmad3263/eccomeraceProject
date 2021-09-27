@@ -9,6 +9,7 @@ export default function Navbar() {
     // const registerdUsers = useSelector(
     //     (state) => state.authenticateUserReducer.registerdUsers
     //   );
+
     // useEffect(()=>{
       
     //     const user = registerdUsers.filter((user) =>user.loginStatus===true);
@@ -16,7 +17,8 @@ export default function Navbar() {
     //     if(user){
     //     setUsername(user.name);
     //     } 
-    // },[])
+    // },[registerdUsers])
+    // console.log(username)
     
     return (
         <NavbarUi counter={addedItems.length}/>

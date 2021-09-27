@@ -52,7 +52,7 @@ export default function ShoppingCartUi(props) {
           <img src={cartImg} alt="empty cart"/>
           <h2>Your Cart is empty </h2>
           <p>Add something to Make me Happy:) </p>
-          <Link className="btn btn-primary"> Continoue Shopping</Link>
+          <Link className="btn btn-primary" to="/"> Continoue Shopping</Link>
           
           </div>
 }
