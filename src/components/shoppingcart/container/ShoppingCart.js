@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import ShoppingCartUi from "../Ui/ShoppingCartUi";
 import { useDispatch, useSelector } from "react-redux";
 import cartAction from "../../../redux/actions/cartAction";

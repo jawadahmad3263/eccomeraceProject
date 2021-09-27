@@ -15,7 +15,7 @@ const authenticateUserReducer = (state = initialState, action) => {
     case "LOGOUT_USER":
       var users = [...state.registerdUsers];
 
-      for (var i = 0; i < users.length; i++) {
+      for (let i = 0; i < users.length; i++) {
         if (users[i].email === action.payload.email)
           users[i].loginStatus = false;
       }

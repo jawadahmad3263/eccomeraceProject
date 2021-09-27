@@ -3,7 +3,7 @@ import Styles from "../assets/css/ShoppingCartUi.module.css";
 import { Link } from 'react-router-dom';
 import cartImg from "../assets/icons/cartImg.jpg";
 export default function ShoppingCartUi(props) {
-    const { addedItems,deleteItem,quantity,quantityPlus,quantityMinus} = props;
+    const { addedItems,deleteItem,quantityPlus,quantityMinus} = props;
     return (
         <div>
             <div className={Styles.items}>
@@ -13,7 +13,7 @@ export default function ShoppingCartUi(props) {
             {addedItems.length>0?
             <div>{addedItems.map((items,index)=>{
                return <div>
-              
+                
                 <div className={Styles.cart_container}>
                   <div className={Styles.singleCart}>
                     <div className={Styles.number}>{index+1}</div>
@@ -54,6 +54,7 @@ export default function ShoppingCartUi(props) {
           <h2>Your Cart is empty </h2>
           <p>Add something to Make me Happy:) </p>
           <Link className="btn btn-primary" to="/"> Continoue Shopping</Link>
+      
           
           </div>
 }

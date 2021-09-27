@@ -1,8 +1,6 @@
 import React from "react";
 import Styles from "../assets/detailUi.module.css";
 import { Link } from "react-router-dom";
-import Sale from "../../slider/assets/Sale.PNG";
-import StarRatings from "react-star-ratings";
 import { useSelector } from "react-redux";
 import Loader from "../../Loader";
 function DetailUI(props) {

@@ -5,12 +5,12 @@ import StarRatings from "react-star-ratings";
 export default function CardUi(props) {
   const { product, index, addItem, checkItem } = props;
   return (
-    <div className="col-md-4 col-lg-4">
-      <div className={`card  p-2 shadow ${Styles.cardStyle}`}>
+    <div className="col-md-4 col-lg-4"  >
+      <div className={`card  p-2 ${Styles.cardStyle}`} key={index} >
         <img
           src={product.image}
           className={`card-img-top image-fluid ${Styles.sizeofimage}`}
-          key={index}
+        
           alt="..."
         />
         <div className="card-body">
@@ -26,7 +26,7 @@ export default function CardUi(props) {
               <div className={Styles.buttonMainWrapper}>
                 <div>
                   {checkItem === false ? (
-                    <button className="btn btn-primary" onClick={addItem}>
+                    <button className={`btn btn-outline-primary ${Styles.btnStyle}`} onClick={addItem}>
                       Add to Cart
                     </button>
                   ) : (
@@ -53,7 +53,9 @@ export default function CardUi(props) {
                 starSpacing="2px"
                 starRatedColor="orange"
               />
+              <h5>Reviews ({product.rating.rate})</h5>
             </div>
+            
           </div>
         </div>
       </div>
