@@ -23,7 +23,11 @@ const authenticateUserReducer = (state = initialState, action) => {
         ...state,
         registerdUsers: [...users],
       }
-
+      case "USER_STATUS":
+        return {
+          ...state,
+          registerdUsers:[...state.registerdUsers]
+        }
     default:
       return state;
   }

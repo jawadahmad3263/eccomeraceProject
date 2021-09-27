@@ -5,8 +5,9 @@ import Styles from "../assets/css/HomeUi.module.css";
 import Card from '../../../components/card/container/Card';
 
 export default function HomeUi(props) {
-  const {jewelary,menCloths,womenCloths,electronics} = props;
+  const {jewelary,menCloths,womenCloths,electronics,logStatus} = props;
     return (
+      
         <div className={`container ${Styles.homepage}`}>
         <div><SliderHero/></div>
         <div className="py-5">
