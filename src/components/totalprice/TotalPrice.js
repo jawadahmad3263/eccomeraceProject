@@ -17,6 +17,7 @@ function TotalPrice() {
     setTotal(net);
   };
 
+
   return (
     <div className={`${Styles.mainPriceWrapper}`}>
       <h5> Total Number of Products {addedItems.length}</h5>
@@ -49,8 +50,9 @@ function TotalPrice() {
           <b>The Total Amount</b> <br /> including
           (shipping)
         </p>
-        {total!==0?
-        <p>${total+10}</p>:""}
+         {total!==0?
+        <p>${total+10}</p>:""} 
+ 
       </div>
       <div className={Styles.checkoutPageButton}>
         <Link
